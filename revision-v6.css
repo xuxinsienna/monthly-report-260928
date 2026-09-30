@@ -1,0 +1,15 @@
+/* The backing and binding are real, persistent surfaces during the turn. */
+.binder:before,.spread:before{display:none}
+.notebook-backing{position:absolute;inset:-13px -12px -14px;z-index:-1;pointer-events:none;container-type:size}
+.notebook-backing>div{position:absolute;inset:0;background:url('assets/worn-blue-backing.png') center/100% 100% no-repeat}
+.binder>.notebook-backing>div{inset:auto;left:50%;top:50%;width:100cqh;height:100cqw;transform:translate(-50%,-50%) rotate(90deg)}
+.notebook-turning{animation:none!important;overflow:visible;pointer-events:none}
+.notebook-turning .notebook-backing,.notebook-turning>.sheet-upper,.notebook-turning>.tabs{transform-origin:50% 50%;will-change:transform}
+.notebook-turning .rings{z-index:12}
+.notebook-turning>.tabs{z-index:0}
+.travelling-leaf{position:absolute;z-index:6;transform-origin:center;pointer-events:none;will-change:transform}
+.travelling-face{position:absolute;inset:0;transform-origin:center bottom;transform-style:preserve-3d;backface-visibility:hidden}
+.travelling-face>.title-leaf,.travelling-face>.toc{max-width:none;backface-visibility:hidden;box-shadow:0 3px 8px #283c4320}
+.notebook-turning>.sheet-upper{z-index:2}
+.notebook-turning .tabs button{transition:none}
+@media(max-width:800px){.notebook-backing{inset:-10px -9px -10px}}

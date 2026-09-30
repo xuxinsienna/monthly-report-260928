@@ -1,0 +1,15 @@
+.chapter-1 .divider-sheet.stripe{background-color:#e9e3cc;background-image:radial-gradient(#36597635 2px,transparent 2.5px);background-size:19px 19px}
+.thanks-sheet{background-color:#e9e3cc;background-image:none}
+.tabs{top:auto;bottom:calc(100% - 46px);left:38px;right:38px;gap:22px;height:76px;align-items:flex-end;z-index:0}
+.tabs button,.tabs button.active,.tabs button:hover:not(.active){transform:none;border-radius:0;box-shadow:none;clip-path:polygon(0 100%,12% 17%,17% 3%,23% 0,78% 0,84% 5%,90% 24%,100% 100%);height:61px;min-width:200px;padding:16px 34px 11px;background:#d0d5c9;font-size:20px;transition:height .18s,background .18s,color .18s}
+.tabs button:hover:not(.active){height:67px;background:#e8e9df;color:#8e3841}
+.tabs button.active{height:74px;background:var(--paper);color:var(--red);font-weight:600}
+.chapter-divider.chapter-0 .tabs button.active{background:#e2e7dc}.chapter-divider.chapter-1 .tabs button.active{background:#e9e3cc}.chapter-divider.chapter-2 .tabs button.active{background:#dbe2e5}
+.sheet{z-index:1}.rings{z-index:4}.arrow span:empty{display:none}
+.notebook-motion-stage{position:fixed;inset:0;z-index:50;overflow:hidden;pointer-events:auto;perspective:2000px}
+.notebook-motion-stage .moving-notebook{animation:none!important;opacity:1!important;will-change:transform;filter:drop-shadow(8px 20px 18px #172d4338)}
+.rotate-to-work,.arrive-from-contents{animation:none!important}
+/* An independently scanned, distressed backing sits behind the real paper. */
+.binder,.spread{isolation:isolate;background:none;border:0;outline:0;box-shadow:none;border-radius:0;filter:drop-shadow(5px 11px 9px #18384e30)}
+.binder:before,.spread:before{content:'';display:block;position:absolute;inset:-13px -12px -14px;z-index:-1;background:url('assets/worn-blue-backing.png') center/100% 100% no-repeat;filter:none;pointer-events:none}
+@media(max-width:800px){.tabs{left:12px;right:12px;bottom:calc(100% - 33px);gap:6px;height:65px}.tabs button,.tabs button.active,.tabs button:hover:not(.active){min-width:0;height:51px;padding:14px 13px 8px;font-size:16px}.tabs button:hover:not(.active){height:55px}.tabs button.active{height:60px}.binder:before,.spread:before{inset:-10px -9px -10px}}

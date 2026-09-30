@@ -1,0 +1,36 @@
+body{overflow-x:clip}
+.notebook-viewport{position:relative;width:min(1200px,94vw);margin:38px auto 0;isolation:isolate}
+.binder.physical-book{width:100%;margin:0;padding:130px 38px 50px;animation:none;transform-origin:0 0;--leaf-height:630px}
+.physical-book .notebook-backing{inset:-13px -12px -14px}
+.physical-book .sheet-upper{min-height:var(--leaf-height)}
+.physical-book.chapter-divider .sheet-upper,.physical-book.opening-book .sheet-upper{height:var(--leaf-height)}
+.physical-book .sheet-lower{min-height:var(--leaf-height)}
+.physical-book .unused-leaf{visibility:hidden;height:var(--leaf-height);padding:0}
+.physical-book>.tabs{top:55px;bottom:auto;left:38px;right:38px;height:76px;z-index:0}
+.physical-book>.sheet{z-index:1}
+.physical-book>.rings{z-index:4}
+.physical-book>.tabs button{min-width:0;flex:0 1 220px}
+.physical-book.opening-book>.tabs{visibility:hidden}
+.opening-copy.title-leaf,.opening-copy.toc{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(90deg);min-height:0;margin:0;padding:50px 55px;background:none;border:0;border-radius:0;mask:none;box-shadow:none;max-width:none}
+.opening-copy.title-leaf{color:var(--blue)}
+.opening-copy.title-leaf h1{font-size:78px;line-height:1.06;margin:42px 0}
+.opening-copy.title-leaf .eyebrow{font-size:20px}
+.opening-copy.title-leaf .signature{font-size:40px}
+.opening-copy.title-leaf .date{font-size:22px}
+.opening-copy.toc:before{display:none}
+.opening-copy.toc h2{font-size:70px}
+.opening-copy.toc .eyebrow{font-size:19px}
+.opening-copy.toc .small{font-size:22px}
+.opening-copy.toc .toc-item{padding:27px 0;grid-template-columns:42px 1fr;gap:16px}
+.opening-copy.toc .toc-item strong{font-size:32px}
+.opening-copy.toc .toc-item small{font-size:28px}
+.opening-copy.toc .arrow{margin-top:38px}
+.opening-copy.toc .arrow span{display:inline;font-size:26px}
+.opening-book .sheet-upper{background-color:#eae4d1;background-image:repeating-linear-gradient(90deg,transparent 0 38px,#806b4420 39px,transparent 40px)}
+.opening-book .sheet-lower{padding:0}
+.chapter-copy{position:absolute;inset:0;padding:inherit}
+.physical-book.shared-turn{pointer-events:none;will-change:transform}
+.shared-turn .sheet-upper{transition:background-color .65s ease}
+.shared-turn .tabs button{transition:none}
+.divider-viewport{overflow:clip;overflow-clip-margin:24px;clip-path:inset(-24px -24px 0 -24px)}
+@media(max-width:800px){.notebook-viewport{width:94vw;margin-top:30px}.binder.physical-book{padding:110px 12px 40px}.physical-book>.tabs{top:45px;left:12px;right:12px;height:66px}.physical-book>.tabs button{flex:1;padding-left:8px;padding-right:8px}.opening-copy.toc .toc-item strong{font-size:29px}.opening-copy.toc .toc-item small{font-size:25px}}

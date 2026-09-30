@@ -1,0 +1,14 @@
+.page-meta .eyebrow{text-transform:none;letter-spacing:.06em}
+.project-kicker{margin-bottom:12px}
+.project-index{font-family:var(--cn);letter-spacing:0;font-weight:500}
+.sheet .project-title{font-family:'Times New Roman',var(--cn);font-size:clamp(35px,4.4vw,58px);font-weight:600;line-height:1.3;color:var(--red);margin-bottom:20px}
+.chapter-1 .garden-intro{margin-top:28px}
+.tool-description{max-width:940px;margin-top:0}
+.tool-description code{font-family:'Times New Roman',var(--cn);font-size:1em}
+.tool-guide-panel{margin-top:24px}
+.tool-guide-panel pre{height:270px;min-height:0;max-height:270px}
+.tool-binder .sheet-upper{padding-bottom:32px}
+.tool-binder .sheet-lower{display:flex;flex-direction:column;min-height:var(--leaf-height)}
+.tool-binder .demo-page{flex:1;min-height:370px;display:grid;place-items:center}
+.sheet .demo-title{font:italic 600 clamp(70px,8vw,106px)/1.1 var(--serif);color:var(--red);text-align:center;margin:0}
+@media(max-width:800px){.tool-guide-panel pre{height:260px;max-height:260px}.tool-binder .demo-page{min-height:320px}}
